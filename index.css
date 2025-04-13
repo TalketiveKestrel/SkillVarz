@@ -150,6 +150,9 @@ body {
 #kbm-text {
     z-index: 999;
 
+    padding-left: 50%;
+    width: 50%;
+
     font-family: 'Jockey One';
     font-style: normal;
     font-weight: 400;
