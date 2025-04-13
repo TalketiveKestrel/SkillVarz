@@ -138,9 +138,11 @@ body {
 #m2 {
     width: 100vw;
     padding-block: 10%;
+    margin-inline: 10%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, 360px);
+    /* grid-template-columns: repeat(auto-fit, 360px); */
+    grid-template-columns: auto auto;
     gap: 10px;
 
     justify-self: center;
@@ -148,10 +150,20 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 540px) {
+    #m2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        gap: 10px;
+
+        justify-content: center;
+    }
+}
+
 #KBM_me {
     width: 50vw;
 
-    max-width: 360px;
+    /* max-width: 360px; */
     min-width: 280px;
     /* object-fit: cover; */
     
