@@ -105,77 +105,77 @@ body {
 
 #Kbm {
     width: 100vw;
+    /* height: 128px; */
 
-    margin: 64px;
+    z-index: 99;
 
     font-family: 'Jockey One';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 32px;
+    line-height: 32px;
+    align-self: center;
+    justify-self: left;
     text-align: center;
 
-    justify-self: center;
-    align-self: center;
+    /* left: 10%; */
     
     color: #FFFCFA;
 }
 
 #KBM-main {
-    position: relative;
-}
-
-#KBMbg {
     width: 100vw;
-    /* height: 100vh; */
-    /* object-fit: cover; */
 
-    filter: blur(25px);
-    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-block: 5vh;
 }
 
 #m2 {
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+    padding-block: 10%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    gap: 10px;
+
+    justify-self: center;
+    justify-items: center;
     align-items: center;
 }
 
 #KBM_me {
-    position: absolute;
-
-    z-index: 99;
-
     width: 50vw;
-    /* min-width: 320px; */
 
-    /* top: 40%; */
-    /* left: 10%; */
-
-    transform: translateY(-50%);
-
-    box-shadow: 0px 0px 40px 0px #000;
-    border-radius: 15px;
+    max-width: 360px;
+    min-width: 280px;
+    /* object-fit: cover; */
+    
+    z-index: 99;
 }
 
 #kbm-text {
-    z-index: 999;
-
-    /* padding-left: 50%; */
-    width: 40%;
-
-    font-family: 'Jockey One';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+    /* width: 30vw; */
 
     color: #FFFCFA;
 
-    text-shadow: 5px 5px 10px #000;
+    z-index: 99;
+}
 
+#KBM_bg {
+    width: 90vw;
+    height: 110%;
+    /* object-fit: contain; */
+    position: absolute;
+    filter: blur(25px);
 }
 
 #stuff {
-    padding-top: 128px;
+    margin-top: 128px;
 
     display: flex;
     justify-content: center;
@@ -209,8 +209,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    /* padding: 10px; */
-    /* margin: 10vh; */
+    padding: 10px;
+    margin: 10vh;
     border-radius: 5px;
 
     display: grid;
@@ -313,7 +313,7 @@ body {
     margin-block: 10%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, 480px);
+    grid-template-columns: repeat(auto-fit, 360px);
     gap: 32px;
     justify-items: center;
     justify-content: center;
