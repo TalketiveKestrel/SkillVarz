@@ -4,6 +4,8 @@ body {
     background-color: #000;
     padding: 0px;
     margin: 0px;
+
+    overflow-x: hidden;
 }
 
 #Header_box {
@@ -150,7 +152,47 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 540px) {
+#KBM_me {
+    width: 50vw;
+    min-width: 280px;
+    
+    z-index: 99;
+
+    border-radius: 15px;
+}
+
+#KBM_info {
+    z-index: 99;
+}
+
+#KBM_name {
+    text-align: center;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    /* line-height: 24px; */
+
+    color: #FFFCFA;
+    text-shadow: 0px 0px 10px #000;
+
+}
+
+#kbm-text {
+    text-align: center;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+
+    color: #FFFCFA;
+    text-shadow: 0px 0px 10px #000;
+    /* background-color: #00000060; */
+}
+
+@media screen and (max-width: 740px) {
     #m2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, 360px);
@@ -158,24 +200,6 @@ body {
 
         justify-content: center;
     }
-}
-
-#KBM_me {
-    width: 50vw;
-
-    /* max-width: 360px; */
-    min-width: 280px;
-    /* object-fit: cover; */
-    
-    z-index: 99;
-}
-
-#kbm-text {
-    /* width: 30vw; */
-
-    color: #FFFCFA;
-
-    z-index: 99;
 }
 
 #KBM_bg {
@@ -241,7 +265,7 @@ body {
 
     height: 75%;
 
-    /* min-width: 200px; */
+    /* min-width: 360px; */
     /* min-height: 300px; */
     padding: 20px;
 
@@ -258,6 +282,27 @@ body {
     box-shadow: 0px 0px 10px ;
 
     z-index: 1;
+}
+
+
+@media screen and (max-width: 920px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 100%);
+        gap: 10px;
+
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        gap: 10px;
+
+        justify-content: center;
+    }
 }
 
 #gridimg {
@@ -339,6 +384,8 @@ body {
 #footerIMG {
     margin: 10%;
     height: 50vh;
+    width: 100%;
+    object-fit: contain;
 }
 
 #skills {
