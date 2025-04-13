@@ -72,6 +72,8 @@ body {
     width: 50vw;
     /* height: 128px; */
 
+    z-index: 99;
+
     position: absolute;
     
     font-family: 'Jockey One';
@@ -132,14 +134,22 @@ body {
     opacity: 0.6;
 }
 
+#m2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #KBM_me {
     position: absolute;
+
+    z-index: 99;
 
     width: 50vw;
     /* min-width: 320px; */
 
-    top: 50%;
-    left: 10%;
+    /* top: 40%; */
+    /* left: 10%; */
 
     transform: translateY(-50%);
 
@@ -150,8 +160,8 @@ body {
 #kbm-text {
     z-index: 999;
 
-    padding-left: 50%;
-    width: 50%;
+    /* padding-left: 50%; */
+    width: 40%;
 
     font-family: 'Jockey One';
     font-style: normal;
