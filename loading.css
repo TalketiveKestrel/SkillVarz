@@ -1,0 +1,51 @@
+
+
+body {
+    background-color: black;
+}
+
+#Holder {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#BG {
+    width: 100vw;
+    height: 100vh;
+    
+    filter: blur(50px);
+    opacity: 0.5;
+}
+
+#Loading_GIF {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+
+    mix-blend-mode: screen;
+}
+
+#text {/* Gathering resources... */
+
+    width: 128px;
+    height: 128px;
+
+    position: absolute;
+    
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+    
+    color: #C2C2C2;
+}
+
