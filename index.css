@@ -29,7 +29,6 @@ body {
 
 #DP {
     position: absolute;
-    /* width: 64px; */
     height: 75%;
     left: 2%;
     top: 12.5%;
@@ -43,10 +42,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* min-width: 720px; */
-
-    /* margin-top: 12.5vh; */
 }
 
 #sparklingStar_BG {
@@ -72,7 +67,6 @@ body {
 
 #Just {
     width: 50vw;
-    /* height: 128px; */
 
     z-index: 99;
 
@@ -86,8 +80,6 @@ body {
     align-self: center;
     justify-self: left;
     text-align: center;
-
-    /* left: 10%; */
     
     color: #FFFCFA;
 }
@@ -107,7 +99,6 @@ body {
 
 #Kbm {
     width: 100vw;
-    /* height: 128px; */
 
     z-index: 99;
 
@@ -119,8 +110,6 @@ body {
     align-self: center;
     justify-self: left;
     text-align: center;
-
-    /* left: 10%; */
     
     color: #FFFCFA;
 }
@@ -143,7 +132,6 @@ body {
     margin-inline: 10%;
 
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, 360px); */
     grid-template-columns: auto auto;
     gap: 10px;
 
@@ -172,7 +160,6 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-    /* line-height: 24px; */
 
     color: #FFFCFA;
     text-shadow: 0px 0px 10px #000;
@@ -189,7 +176,6 @@ body {
 
     color: #FFFCFA;
     text-shadow: 0px 0px 10px #000;
-    /* background-color: #00000060; */
 }
 
 @media screen and (max-width: 740px) {
@@ -203,9 +189,8 @@ body {
 }
 
 #KBM_bg {
-    width: 90vw;
+    width: 100vw;
     height: 110%;
-    /* object-fit: contain; */
     position: absolute;
     filter: blur(25px);
 }
@@ -250,12 +235,8 @@ body {
     border-radius: 5px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, 480px);
     gap: 10px;
-
-    /* backdrop-filter: blur(25px); */
-
-    /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 #card {
@@ -264,9 +245,6 @@ body {
     gap: 10px;
 
     height: 75%;
-
-    /* min-width: 360px; */
-    /* min-height: 300px; */
     padding: 20px;
 
     margin-top: 50%;
@@ -279,9 +257,18 @@ body {
     border-radius: 5px;
 
     background-color: #0f0f0f;
-    box-shadow: 0px 0px 10px ;
+    box-shadow: 0px 0px 10px 1px #080808;
 
     z-index: 1;
+    scale: 1;
+    transition-duration: 300ms
+}
+
+#card:hover {
+    background-color: #131313;
+    scale: 1.1;
+    transition-duration: 300ms;
+    box-shadow: 0px 0px 10px 10px #000;
 }
 
 
@@ -321,7 +308,6 @@ body {
 
     height: 110%;
     width: 100%;
-    /* object-fit: cover; */
     
     filter: blur(25px);
     opacity: 0.6;
@@ -385,6 +371,7 @@ body {
     margin: 10%;
     height: 50vh;
     width: 100%;
+
     object-fit: contain;
 }
 
