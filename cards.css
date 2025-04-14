@@ -28,7 +28,7 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: repeat(auto-fit, 90vw);
+    grid-template-rows: repeat(auto-fit, 90vh);
     gap: 1vh;
 
     justify-content: center;
@@ -38,7 +38,7 @@ body {
 
 #border {
     display: grid;
-    grid-template-rows: repeat(auto-fit, 90vw);
+    grid-template-rows: repeat(auto-fit, 90vh);
     gap: 1vh;
 
     justify-content: center;
