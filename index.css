@@ -278,7 +278,7 @@ body {
     animation-range: entry 100px;
 }
 
-#card {
+.card {
     display: grid;
     grid-template-rows: auto 50px 50px;
     gap: 10px;
@@ -303,7 +303,7 @@ body {
     transition-duration: 300ms;
 }
 
-#card:hover {
+.card:hover {
     background-color: #131313;
     scale: 1.1;
     transition-duration: 300ms;

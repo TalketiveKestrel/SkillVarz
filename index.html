@@ -76,32 +76,32 @@
         <p id="Check_Stuff">Check out some of my stuff!</p>
         <img src="stuffBG.png" alt="" id="stuff_BG">
         <div id="container">
-            <div id="card">
+            <div class="card" id="cardA" onclick="page()">
                 <img src="moon.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">Midnight Sun</p>
                 <p id="gridTxt2">A 20 minute stacked shot of the moon from my backyard.</p>
             </div>
-            <div id="card">
+            <div class="card" id="cardB" onclick="page()">
                 <img src="sunset.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">Sunsetssss</p>
                 <p id="gridTxt2">Lovely evening with close cousins on a lakeside.</p>
             </div>
-            <div id="card">
+            <div class="card" id="cardC" onclick="page()">
                 <img src="concert.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">Music Never Ends</p>
                 <p id="gridTxt2">A lovely evening at a concert photographing the performers.</p>
             </div>
-            <div id="card">
+            <div class="card" id="cardD" onclick="page()">
                 <img src="milky_way.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">Midnight Therapy</p>
                 <p id="gridTxt2">A tracked long exposure of the Milky-Way core. Shot on an old android phone with a homemade tracker.</p>
             </div>
-            <div id="card">
+            <div class="card" id="cardE" onclick="page()">
                 <img src="wroom.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">Frankenstein’s Monster</p>
                 <p id="gridTxt2">A cobbled together proof of concept made for a college project. Streams HD video to a Virtual-Reality Headset.</p>
             </div>
-            <div id="card">
+            <div class="card" id="cardF" onclick="page()">
                 <img src="me2.jpg" alt="" id="gridimg">
                 <p id="gridTxt1">The Crazy Scientist</p>
                 <p id="gridTxt2">The guy behind all of this.</p>
@@ -137,6 +137,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function page() {
+            let cardName = event.target.parentNode.id;
+            console.log(event.target.parentNode.id);
+            if (cardName == 'container') {
+                console.log('pass')
+            } else {
+                sessionStorage.setItem(name, cardName);
+                window.location.href = "card.html";
+            }
+        }
+    </script>
 
 </body>
 </html>
