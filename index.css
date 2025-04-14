@@ -377,10 +377,11 @@ body {
 }
 
 #footerIMG {
-    margin: 10%;
-    height: 50vh;
+    /* margin: 10%; */
+    /* height: 50vh; */
     width: 100%;
 
+    border-radius: 15px;
     object-fit: contain;
 }
 
@@ -427,4 +428,16 @@ body {
     justify-self: center;
 
     color: #606060;
+}
+
+#credits {
+    margin: 10%;
+    width: 90%;
+    
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+
+    justify-items: center;
+    text-align: center;
 }
