@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Aaditya's Portfolio</title>
 
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="loading.css">
 </head>
-<body>
+
+<body onload="myFunction()">
+
+    <div id="Holder">
+        <p id="text">Gathering Data....</p>
+
+        <img src="gatheringGIF.gif" alt="" id="Loading_GIF">
+        <img src="giphy.gif" alt="" id="BG">
+    </div>
+    
+    <script>
+        function myFunction() {
+            setTimeout(hidePage, 3000);
+            setTimeout(showPage, 4000);
+
+        }
+
+        function hidePage() {
+            document.getElementById("Holder").style.transitionDuration = "1s";
+            document.getElementById("Holder").style.opacity = 0;
+        }
+
+        function showPage() {
+            document.getElementById("Header_box").style.display = "flex";
+            document.getElementById("sparklingStar").style.display = "flex";
+            document.getElementById("KBM").style.display = "flex";
+            document.getElementById("stuff").style.display = "flex";
+            document.getElementById("footer").style.display = "flex";
+        }
+    </script>
 
     <div id="Header_box">
         <div id="Header">
@@ -17,7 +46,6 @@
     </div>
 
     <div id="sparklingStar">
-        <!-- <img src="" alt="" id="top_padding"> -->
         <p id="Just">Just a kid, doing whatever’s FUN!</p>
         <img src="index.gif" alt="" id="network">
         <img src="indexBGa.jpg" alt="" id="sparklingStar_BG">
@@ -104,5 +132,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>

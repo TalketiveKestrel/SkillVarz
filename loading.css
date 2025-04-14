@@ -1,9 +1,5 @@
 
 
-body {
-    background-color: black;
-}
-
 #Holder {
     display: flex;
 
@@ -12,6 +8,9 @@ body {
 
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    z-index: 999999;
 }
 
 #BG {
