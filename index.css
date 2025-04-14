@@ -159,6 +159,15 @@ body {
     justify-self: center;
     justify-items: center;
     align-items: center;
+
+    scale: 0.8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes fade-in {
+    to { scale: 1; opacity: 1;}
 }
 
 #KBM_me {
@@ -261,6 +270,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 480px);
     gap: 10px;
+
+    
+    scale: 0.8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 100px;
 }
 
 #card {
@@ -285,7 +300,7 @@ body {
 
     z-index: 1;
     scale: 1;
-    transition-duration: 300ms
+    transition-duration: 300ms;
 }
 
 #card:hover {
