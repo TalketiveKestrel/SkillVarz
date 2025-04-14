@@ -196,6 +196,7 @@ body {
     width: 100vw;
     height: 110%;
     position: absolute;
+    opacity: 0.6;
     filter: blur(25px);
 }
 
